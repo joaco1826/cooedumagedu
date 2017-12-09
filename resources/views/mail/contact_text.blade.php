@@ -1,0 +1,1 @@
+nombre: {{ $contact->name }}, Email: {{ $contact->email }}, Mensaje: {{ $contact->message }}
