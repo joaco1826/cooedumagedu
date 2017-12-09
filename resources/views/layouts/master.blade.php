@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
     <link rel="shortcut icon" href="{{ asset("img/favicon-06.png") }}">
-    <link rel="stylesheet" href="{{ mix("css/app.css") }}">
+    <link rel="stylesheet" href="{{ asset(mix("css/app.css")) }}">
     @yield('style')
 </head>
 <body>
@@ -15,7 +15,7 @@
 @yield('content')
 @component('components.footer')
 @endcomponent
-<script src="{{ mix("js/app.js") }}"></script>
+<script src="{{ asset(mix("js/app.js")) }}"></script>
 @yield('script')
 </body>
 </html>
