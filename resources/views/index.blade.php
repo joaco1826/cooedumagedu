@@ -8,7 +8,7 @@
     <div class="slick-carousel">
         @foreach($banner as $b)
             <div>
-                <img class="banner" src="{{ asset($b->image) }}" alt="cooedumagedu banner">
+               <div class="div-banner"> <img class="banner" src="{{ asset($b->image) }}" alt="cooedumagedu banner"></div>
             </div>
         @endforeach
     </div>
