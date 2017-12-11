@@ -5,7 +5,7 @@
 @endsection
 @section('content')
 <div class="relative">
-    <div class="slick-carousel">
+    <div class="slick-banner">
         @foreach($banner as $b)
             <div>
                <div class="div-banner"> <img class="banner" src="{{ asset($b->image) }}" alt="cooedumagedu banner"></div>
@@ -175,7 +175,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKUfyBMdaU5ep--bbnfaAHx-um2NU6LGo"></script>
 <script>
     $(document).ready(function () {
-        $(".slick-carousel").slick({
+        $(".slick-banner").slick({
             prevArrow: $("#izq"),
             nextArrow: $("#der"),
             autoplay: true,
