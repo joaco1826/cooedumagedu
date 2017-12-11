@@ -51,12 +51,4 @@ $(document).ready(function () {
     }).on('submit', function (e) {
         e.preventDefault();
     });
-   $(".slick-carousel").slick({
-       prevArrow: $("#izq"),
-       nextArrow: $("#der"),
-       autoplay: true,
-       autoplaySpeed: 5000,
-       fade: true,
-       speed: 500
-   })
 });

@@ -174,6 +174,16 @@
     </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKUfyBMdaU5ep--bbnfaAHx-um2NU6LGo"></script>
 <script>
+    $(document).ready(function () {
+        $(".slick-carousel").slick({
+            prevArrow: $("#izq"),
+            nextArrow: $("#der"),
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            speed: 500
+        })
+    });
     window.onload = carga_mapa;
     function carga_mapa() {
 
