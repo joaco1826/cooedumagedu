@@ -181,7 +181,10 @@
             autoplay: true,
             autoplaySpeed: 5000,
             fade: true,
-            speed: 500
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true
         })
     });
     window.onload = carga_mapa;
