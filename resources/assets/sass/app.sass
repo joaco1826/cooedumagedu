@@ -170,13 +170,14 @@ a
   width: 100%
   padding: 4rem 0
   text-align: center
+  display: table
   p
     color: $wh
     font-size: 20pt
     font-weight: 700
     margin-bottom: 3rem
   &__blo
-    @include xy-cell($size: 20%, $gutters: 40, $gutter-type: margin)
+    @include xy-cell($size: auto, $gutters: 40, $gutter-type: margin)
     &:nth-child(2)
       &__text
         line-height: 21px

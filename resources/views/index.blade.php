@@ -39,7 +39,7 @@
         <div class="content grid-x">
             @foreach($information as $i)
                 <div class="info__blo">
-                    <a target="_blank" href="{{ $i->link }}">
+                    <a target="_blank" href="@if ($i->link == "") {{ $i->pdf }} @else {{ $i->link }} @endif">
                         <div class="info__blo__img"><img src="{{ asset($i->image) }}" alt="Cooedumag info"></div>
                         <div class="info__blo__text">{{ $i->name }}</div>
                     </a>
