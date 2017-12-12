@@ -18,7 +18,7 @@ class ContactController
             ])
         );
 
-        Mail::to('juaco.1826@gmail.com')->send(new UserContact($contact));
+        Mail::to('info@cooedumag.edu.co')->send(new UserContact($contact));
 
         return response(json_encode(['message' => 'Saved.']), 201)->header('Content-Type', 'text/json');
 
